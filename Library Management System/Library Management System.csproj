@@ -1710,6 +1710,7 @@
     <Content Include="fontawsome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawsome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawsome\webfonts\fa-solid-900.svg" />
+    <Content Include="HomePage.aspx" />
     <Content Include="images\adminuser.png" />
     <Content Include="images\book-online.png" />
     <Content Include="images\books.png" />
@@ -1729,6 +1730,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
