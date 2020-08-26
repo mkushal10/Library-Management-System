@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
+    <Content Include="BookInventory.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.5.1.slim.min.js" />
@@ -1727,6 +1728,10 @@
     <Content Include="images\search-online.png" />
     <Content Include="images\sign-up.png" />
     <Content Include="images\writer.png" />
+    <Content Include="IssueBook.aspx" />
+    <Content Include="ManageAuthor.aspx" />
+    <Content Include="ManageMember.aspx" />
+    <Content Include="ManagePublisher.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="UserSignUp.aspx" />
@@ -1741,12 +1746,47 @@
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BookInventory.aspx.cs">
+      <DependentUpon>BookInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookInventory.aspx.designer.cs">
+      <DependentUpon>BookInventory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBook.aspx.cs">
+      <DependentUpon>IssueBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueBook.aspx.designer.cs">
+      <DependentUpon>IssueBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAuthor.aspx.cs">
+      <DependentUpon>ManageAuthor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAuthor.aspx.designer.cs">
+      <DependentUpon>ManageAuthor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMember.aspx.cs">
+      <DependentUpon>ManageMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageMember.aspx.designer.cs">
+      <DependentUpon>ManageMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePublisher.aspx.cs">
+      <DependentUpon>ManagePublisher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagePublisher.aspx.designer.cs">
+      <DependentUpon>ManagePublisher.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
