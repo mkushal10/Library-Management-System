@@ -115,7 +115,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Sign Up" />
+                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="BtnSignUp" runat="server" Text="Sign Up" OnClick="BtnSignUp_Click" />
                                 </div>
                             </div>
                         </div>
