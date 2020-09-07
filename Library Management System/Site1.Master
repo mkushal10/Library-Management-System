@@ -65,7 +65,7 @@
                             <asp:LinkButton class="nav-link" ID="BtnSignUp" runat="server" OnClick="BtnSignUp_Click">Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="BtnLogout" runat="server" Visible="False">Logout</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="BtnLogout" runat="server" Visible="False" OnClick="BtnLogout_Click">Logout</asp:LinkButton>
                         </li>
  
                         <li class="nav-item active">
