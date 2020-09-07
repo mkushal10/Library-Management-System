@@ -41,7 +41,7 @@
       </div>
    </section>
    <section>
-      <img src="imgs/in-homepage-banner.jpg" class="img-fluid"/>
+      <img src="images/in-homepage-banner.jpg" class="img-fluid"/>
    </section>
    <section>
       <div class="container">

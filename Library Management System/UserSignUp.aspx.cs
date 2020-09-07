@@ -25,8 +25,7 @@ namespace Library_Management_System
             //Response.Write("<script>alert('Testing');</script>");
             if (checkMemberExists())
             {
-
-                Response.Write("<script>alert('Member Already Exist with this Member ID, try other ID');</script>");
+                Response.Write("<script>alert('Username is already exist with this username, try other ID');</script>");
             }
             else
             {
@@ -38,11 +37,19 @@ namespace Library_Management_System
         {
             try
             {
+                //in-build class of Sql Connection
+                //need to add namespace -- System.Data.SqlClient
+                //con object requires a parameter, that parameter is strcon which is ConnectionStrings
                 SqlConnection con = new SqlConnection(strcon);
+
+                //check the connection is open or not
+                //if closed essential to open
                 if (con.State == ConnectionState.Closed)
                 {
+                    //opened the connection
                     con.Open();
                 }
+
                 SqlCommand cmd = new SqlCommand("SELECT * from member_master_table where member_id='" + TextBox8.Text.Trim() + "';", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -84,9 +91,10 @@ namespace Library_Management_System
                 cmd.Parameters.AddWithValue("@member_id", TextBox8.Text.Trim());
                 cmd.Parameters.AddWithValue("@password", TextBox9.Text.Trim());
                 cmd.Parameters.AddWithValue("@account_status", "pending");
+                //inserts all the values from the form
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Sign Up Successful. Go to User Login to Login');</script>");
+                Response.Write("<script>alert('You are successfullt Sign Up. Go to User Login to Login');</script>");
             }
             catch (Exception ex)
             {
